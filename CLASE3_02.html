@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+</head>
+<body>
+    <header>
+    <h1>Bienvenido a mi Pagina web</h1>
+    <nav>
+        <ul>
+            <li><a href="Clase03_1">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre Mi</a></li>
+            <li><a href="#proyectos">Protecto</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi pagina web,Aqui podras encontrar informacion sobre mi, mis proyectos y como contactarme.</p>
+
+        <article>
+            <h3>Ultimas noticias</h3>
+            <p>TEXTO ALEATORIO</p>
+            <ul>
+                <li>Proyecto A completado</li>
+                <li>Nueva colaboracion de la empresa X</li>
+                <li>Proxima coferencia el mes que viene</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="Sobre mi">
+        <h3>Ultimas noticias</h3>
+        <p>TEXTO ALEATORIO</p>
+        <p>Algunas de mi habilidades: </p>
+        <ul>
+            <li>Desarrollo Frontend (HTML.CSS,JAVAScrip)</li>
+            <li>Desarrollo Backend (PHP,Node,js)</li>
+            <li>Base de Datos (MySQL,MongoDB)</li>
+            <li>Metodologias Agiles (Scrum,kambam)</li>
+        </ul>
+
+        <h1>PROYECTOS</h1>
+        <p>TEXTO ALEATORIO</p>
+        <P></P>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre del Proyecto</th>
+                    <th>Descripcion</th>
+                    <th>Fecha de Finalizacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Proyecto A</th>
+                    <th>Desarrollo de una aplicacion web para gestion de tareas</th>
+                    <th>Marzo 2023</th>
+                </tr>
+                <tr>
+                    <th>Proyecto B</th>
+                    <th>Sitio web de ecommerce para ventas de productos electronicos</th>
+                    <th>Junio2022</th>
+                </tr>
+                <tr>
+                    <th>Proyecto C</th>
+                    <th>Plataforma educativo en linea con funcionalidades avanzadas</th>
+                    <th>octubre2021</th>
+                </tr>
+            </es>
+        </table>
+    </article>
+    </section><br>
+
+    <section id="Contacto">
+       <h2>Contacto</h2>
+       <p>Si deseas contactarme, completa el siguiente formulario</p>
+       <form action="enviar" method="post"> 
+            <label for="nombre"> Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email"> Correo Electronico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+    <input type="submit" value="Enviar"></input>
+       </form>
+    </section>   
+</body>
+</html>

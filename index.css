@@ -3,10 +3,11 @@
 width: 100%;
 height: 100vh;
 position: relative;
- }
+}
 
 .carrusel{ 
     height: 72%;
+    overflow-x: hidden;
 } 
 .header{
     height: 15%;
@@ -113,12 +114,7 @@ nav ul li:hover {
 
 .numeroContacto>a:hover{
     cursor:pointer
-}
-
-
-
-
-
+} 
 .carrusel-contenido {
     display: flex;
     transition: transform 0.5s ease;
@@ -228,23 +224,33 @@ nav ul li:hover {
     border-radius: 20px;
     justify-items: center;
     text-align: center;
-    height: 15%;
+    height: 10%;
 }
 
 a b {
     text-decoration: none;
     color: white;
 }
+
 .AgregarPedido:hover{
     text-decoration: none !important; 
     border-bottom: none !important; 
 } 
-
-
+ 
 .BotonComprar p{
  color: white;
  font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
  font-size: 18px;
+}
+
+.BotonPersonalizar{
+    margin-top: 10px;
+    width: 80%;
+    background-color: rgb(76, 168, 255);
+    border-radius: 20px;
+    justify-items: center;
+    text-align: center;
+    height: 10%;
 }
 
 .BAMQUETES{
@@ -313,3 +319,153 @@ h1,h2{
     font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
  
+.carroCompras{ 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 9999;  
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+    visibility:hidden;
+} 
+ 
+.detalleCarrito{
+    width: 25%;
+    right: 0;
+    height: 100%;
+    top: 0;
+    background-color: white;
+    position: relative; 
+    align-items: top; 
+    padding: 30px 30px 30px 30px;
+}
+
+.detalleCarrito p b{
+    font-size: 20px;
+    font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.cerrar b{ 
+    font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;  
+    color: black;
+}
+
+.cerrar b:hover{
+    cursor:pointer; 
+}
+.cerrar:hover{
+    text-decoration: none !important; 
+    border-bottom: none !important; 
+}
+
+.cabeceraCarrito{
+    justify-content:space-between;
+    display: flex; 
+    align-items: center;
+}
+
+.cabeceraCarrito a b{
+    color: black !important;
+} 
+ 
+.elementos p{
+    font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;  
+}
+.elementos{ 
+    text-align: center;
+    margin-top: 70px;
+}
+
+.PreferenciaPedido{
+    width: 100%;
+    border-collapse: collapse;  
+    border-spacing: 0;  
+}
+
+ th, td {
+    padding: 15px; 
+    font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: gray ;
+    font-size: 12px;
+    text-align: left;
+
+}
+.circulo{
+    background-color: #3797f1;
+    border-radius: 20%;
+    color: white;
+    text-align: center !important;
+    height: 100%;
+    width: 50%;
+    /* padding: 5% 5%; */
+}
+
+.circulo:hover
+{
+    cursor: pointer;
+}
+
+.PersonalizarPedido{ 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 9999;  
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+    visibility: hidden;
+} 
+
+.EspacioPersonalizacion{
+    width: 30%;
+    right: 35%;
+    height: 45%;
+    top: 5%; 
+    background-color: white;
+    position: relative; 
+    align-items: top; 
+    padding: 30px 30px 30px 30px;
+    border-radius: 10%;
+}
+
+.cantidad{
+    width: 1%; 
+}
+.ItemPersonalizado{
+    width: 1%;
+}
+
+.guardarPersonalizacion{
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    font-size: 15px;
+}
+
+.guardarPersonalizacion:hover{
+    cursor: pointer;
+}
+
+.descripcionDePersonalizacion p b{
+    font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(48, 48, 48) ;
+    font-size: 14px;
+}
+
+:target{
+    visibility: visible;
+}

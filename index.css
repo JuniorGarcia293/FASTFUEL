@@ -6,7 +6,7 @@ position: relative;
 }
 
 .carrusel{ 
-    height: 72%;
+    height: 100%;
     overflow-x: hidden;
 } 
 .header{
@@ -123,12 +123,18 @@ nav ul li:hover {
 .carrusel-item {
     min-width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .carrusel-item img {
     width: 100%;
     height: 100%;
     display: block;
+    background-size: cover;
+    background-repeat:no-repeat;
+
 }
 
 /* Animar el carrusel */
@@ -141,7 +147,8 @@ nav ul li:hover {
 }
 
 .carrusel-contenido {
-    animation: slide 20s infinite; /* Reduce el tiempo para que vaya más rápido */
+    animation: slide 20s infinite; 
+    height: 100%;
 }
 
 .productos {
@@ -434,6 +441,14 @@ h1,h2{
     align-items: top; 
     padding: 30px 30px 30px 30px;
     border-radius: 10%;
+}
+
+.EstilosdeX{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    color: black;
+    text-align: right;
 }
 
 .cantidad{

@@ -16,19 +16,19 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .producto {
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 10px;
     padding: 15px;
     width: 300px;
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s;  
 }
 
 .producto:hover {
@@ -50,3 +50,35 @@ h1 {
     font-size: 1rem;
     color: #666;
 }
+
+
+.BotonComprar{
+    width: 100%;
+    background-color: rgb(69, 189, 236);
+    border-radius: 20px;
+    justify-items: center;
+    text-align: center;
+    height: 6%;
+    margin: 0 auto;
+}
+
+a b {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.AgregarPedido:hover{
+    text-decoration: none !important; 
+    border-bottom: none !important; 
+} 
+ 
+.BotonComprar p{
+ color: white;
+ font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ font-size: 18px;
+}
+
+.AgregarPedido:hover{
+    text-decoration: none !important; 
+    border-bottom: none !important; 
+} 

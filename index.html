@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>FASTFUEL.CHICKENs</title>
+    <script src="index.js"></script>
+    <title>FASTFUEL.CHICKENS</title>
 </head>
 <br>
 
@@ -39,11 +40,15 @@
                         <a class="numero">Iniciar Sesiòn</a>
                     </div>
                 </div>
-                <div class="contacto">
+                <div class="contacto"  id="VisualizarCarrito" >
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <div class="numeroContacto">
-                        <a href="#carroCompras" class="numero">S/. 0.00</a>
-                    </div>
+                        <div class="cart">
+                            <p><span id="total"></span></p>
+                            <section id="cart-section">
+                                <a>Total: <span Total: id="total-price" class="numero">S/ 0.00</span></a>
+                                <ul id="cart-items"></ul>
+                            </section>
+                        </div>
                 </div>
             </div>
         </div>
@@ -124,7 +129,7 @@
                                     <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
                                 </div>
                                 <div class="BotonPersonalizar">
-                                    <a href="#PersonalizarPedido" class="AgregarPedido"><b>Personalizar</b></a>
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +148,7 @@
                                     <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
                                 </div>
                                 <div class="BotonPersonalizar">
-                                    <a href="#PersonalizarPedido" class="AgregarPedido"><b>Personalizar</b></a>
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +165,7 @@
                                     <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
                                 </div>
                                 <div class="BotonPersonalizar">
-                                    <a href="#PersonalizarPedido" class="AgregarPedido"><b>Personalizar</b></a>
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +189,7 @@
                                     <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
                                 </div>
                                 <div class="BotonPersonalizar">
-                                    <a href="#PersonalizarPedido" class="AgregarPedido"><b>Personalizar</b></a>
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +207,7 @@
                                     <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
                                 </div>
                                 <div class="BotonPersonalizar">
-                                    <a href="#PersonalizarPedido" class="AgregarPedido"><b>Personalizar</b></a>
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +225,7 @@
                                     <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
                                 </div>
                                 <div class="BotonPersonalizar">
-                                    <a href="#PersonalizarPedido" class="AgregarPedido"><b>Personalizar</b></a>
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
                                 </div>
                             </div>
                         </div>
@@ -241,10 +246,35 @@
                             </td>
                             <td>
                                 <p><b>Nuestros productos</b></p>
-                                <ul class="li"><a href="">Personales</a></ul>
-                                <ul class="li"><a href="">Familiares</a></ul>
-                                <ul class="li"><a href="">Banquetes</a></ul>
-                                <ul class="li"><a href="">Sandwich</a></ul>
+                                    <div>
+                                      <ul>
+                                        <li><a href="Personales.html">Personales</a></li>
+                                      </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Duos.html">Duos</a></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Familiares.html">Familiares</a></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Banquetes.html">Banquetes</a></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Sandwich.html">Sandwich y Rolls</a></li>
+                                        </ul>
+                                    </div>
                             </td>
                             <td>
                                 <p><b>Ayuda</b></p>
@@ -252,10 +282,13 @@
                                 <ul class="li"><a href="">Politica de datos personales</a></ul>
                                 <ul class="li"><a href="">Términos y condiciones</a></ul>
                                 <ul class="li"><a href="">Derecho de ARCO</a></ul>
-                                <ul class="li"><a href="">Nuestros LOcales</a></ul>
                             </td>
                             <td>
-                                <p><b>Libro de reclamaciones</b></p>
+                                <div>
+                                    <ul>
+                                      <li><a href="Reclamaciones.html">Libro de Reclamaciones</a></li>
+                                    </ul>
+                                </div>
                                 <img src="https://www.popeyes.com.pe/static/version1725277027/frontend/Ngr/popeyes/es_PE/images/libro-de-reclamaciones.jpg"
                                     alt="">
                                 <p><b>Metodos de pago</b></p>
@@ -283,12 +316,12 @@
         <div class="detalleCarrito">
             <div class="cabeceraCarrito">
                 <p><b>Carrito de compras</b></p>
-                <a href="index.html" class="cerrar"><b>x</b></a>
+                <a id="CerrarCarritoCompras" class="cerrar"><b>x</b></a>
             </div>
-            <div class="elementos">
+            <div class="elementos" id="elementos">
                 <p>Tu producto ha sido eliminado del carrito y es necesario que realicemos tu compra nuevamente.</p>
             </div>
-        </div>
+    </div>
 
         <div class="PersonalizarPedido" id="PersonalizarPedido">
             <div class="EspacioPersonalizacion">
@@ -297,48 +330,117 @@
                     <p><b>Personaliza tu pedido , puedes escoger las distinas salsas del listado , considerar que solo
                             se pueden escoger hasta 10 items por cada uno</b></p>
                 </div>
-                <div>
-                    <div style="width: 100%; ">
-                        <table class="PreferenciaPedido">
-                            
-                            <tr>
-                                <td class="ItemPersonalizado">Mayonesa</td>
-                                <td class="cantidad">
-                                    <div class="circulo">-</div>
-                                </td>
-                                <td class="cantidad"> 0 </td>
-                                <td class="cantidad">
-                                    <div class="circulo">+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ItemPersonalizado">Keptchup</td>
-                                <td class="cantidad">
-                                    <div class="circulo">-</div>
-                                </td>
-                                <td class="cantidad"> 0 </td>
-                                <td class="cantidad">
-                                    <div class="circulo">+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ItemPersonalizado">Bebidas</td>
-                                <td class="cantidad">
-                                    <div class="circulo">-</div>
-                                </td>
-                                <td class="cantidad"> 0 </td>
-                                <td class="cantidad">
-                                    <div class="circulo">+</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" style="text-align: center;padding-top: 30px;">
-                                    <a href="index.html" class="guardarPersonalizacion">Guardar</a>
-                                </td>
-                            </tr>
-                        </table>
+                <section>
+                    <div class="container-producto-v2">
+                        <div class="producto-v4">
+                            <div style="width: 100%; ">
+                                <table class="PreferenciaPedido">
+                                    <tr>
+                                        <td class="ItemPersonalizado">6 PICANTITO</td>
+                                        <td class="cantidad"> 
+                                            <td class="cantidad">
+                                                <input type="radio" id="" name="" value=""> 
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">6 TRADICIONAL</td>
+                                        <td class="cantidad"> 
+                                            <td class="cantidad">
+                                                <input type="radio" id="" name="" value=""> 
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">TENDER X8 UNIDADES</td>
+                                        <td class="cantidad"> 
+                                            <td class="cantidad">
+                                                <input type="radio" id="" name="" value=""> 
+                                            </td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>   
+                        </div>
+                        <div class="producto-v4">
+                            <div style="width: 100%; ">
+                                <table class="PreferenciaPedido">
+                                    
+                                    <tr>
+                                        <td class="ItemPersonalizado">Mayonesa</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">Keptchup</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">Bebidas</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="producto-v4">
+                            <div style="width: 100%; ">
+                                <table class="PreferenciaPedido">
+                                    
+                                    <tr>
+                                        <td class="ItemPersonalizado">CHICHARRON POP +$5.90</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">6ALITAS PICANTES +$12.90 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">10 NUGGET +$12.90</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="boton-guardar" id="boton-guardar">
+                        <a href="#" class="guardarPersonalizacion">Guardar</a>
+                    </div> 
+                </section>
             </div>
         </div>
 

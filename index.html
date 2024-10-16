@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="index.js"></script>
+    <title>FASTFUEL.CHICKENS</title>
+</head>
+<br>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="contentHeader">
+                <img src="https://i.ibb.co/VN9Pfs0/Fastfuel.png" alt="No se encontro nada">
+                <div class="buttonHeader">
+                    <button class="botonRecibirPedido">¿Como desea recibir su pedido?</button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="Locales.html">Locales</a></li>
+                        <li><a href="Mispedidos.html">Mis Pedidos</a></li>
+                    </ul>
+                </nav>
+                <div class="buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="contacto">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="numeroContacto">
+                        <a>Llamanos</a>
+                        <a class="numero">016274333</a>
+                    </div>
+                </div>
+                <div class="contacto">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="numeroContacto">
+                        <a>Hola,</a>
+                        <a class="numero">Iniciar Sesiòn</a>
+                    </div>
+                </div>
+                <div class="contacto"  id="VisualizarCarrito" >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="cart">
+                            <p><span id="total"></span></p>
+                            <section id="cart-section">
+                                <a>Total: <span Total: id="total-price" class="numero">S/ 0.00</span></a>
+                                <ul id="cart-items"></ul>
+                            </section>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="carrusel" style="background-color: red;">
+            <div class="carrusel-contenido" style="background-color: blue;">
+                <div class="carrusel-item">
+                        <img src="img/Post de Instagram Comida Rápida Blanco.jpg" alt="Descripción de la imagen"    
+                        alt="Imagen 1">
+                </div>
+                <div class="carrusel-item">
+                        <img src="img/Post de Instagram Comida Rápida Rojo.jpg" alt="Descripción de la imagen"
+                        alt="Imagen 2">
+                </div>
+                <div class="carrusel-item">
+                        <img src="img/Post en instagram de promoción de comida (1).jpg" alt="Descripción de la imagen"    
+                        alt="Imagen 3">
+                </div>
+                <div class="carrusel-item">
+                        <img src="img/Post en instagram de promoción de comida.jpg" alt="Descripción de la imagen"    
+                        alt="Imagen 4">
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <div>
+                <section class="BAMQUETES">
+                    <h1>MENU</h1>
+                    <div class="productos">
+                        <div class="BAMQUETES producto">
+                            <img src="https://www.popeyes.com.pe/media/wysiwyg/Categor_a-Personal-Desktop-384px-x-320px.png"
+                                alt="Tradi Roll">
+                            <h1></h1>
+                            <a>PERSONAL</a>
+                        </div>
+                        <div class="BAMQUETES producto">
+                            <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467707.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=400&width=400&canvas=400:400&format=jpeg"
+                                alt="Sandwich Mayo Especial">
+                            <a>DUOS</a>
+                        </div>
+                        <div class="BAMQUETES producto">
+                            <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467706.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=400&width=400&canvas=400:400&format=jpeg"
+                                alt="Sandwich Ají Mix">
+                            <a>FAMILIARES</a>
+                        </div>
+                        <div class="BAMQUETES producto">
+                            <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467705.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=400&width=400&canvas=400:400&format=jpeg"
+                                alt="Sandwich Ají Mix">
+                            <a>Banquetes</a>
+                        </div>
+                        <div class="BAMQUETES producto">
+                            <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467704.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=400&width=400&canvas=400:400&format=jpeg"
+                                alt="Sandwich Ají Mix">
+                            <a>Sandwich y Rolls</a>
+                        </div>
+                        <div class="BAMQUETES producto">
+                            <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467669_1.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=400&width=400&canvas=400:400&format=jpeg"
+                                alt="Sandwich Ají Mix">
+                            <a>Complementos</a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h1>Los mas vendidos</h1>
+                    <div class="container-producto-v2">
+                        <div class="producto-v2">
+                            <div class="w-50">
+                                <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467673.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=200&width=200&canvas=200:200&format=jpeg"
+                                    alt="Tradi Roll">
+                            </div>
+                            <div class="w-50" id="duoChicharronPop">
+                                <h2>Dúo Chicharrón Pop</h2>
+                                <p>2 Chicharrón Pop y 2 Papas Cajún Grandes. Salsas: 2 Ajíes, 2 Mayonesa y 2 Ketchup.
+                                </p>
+                                <h3>S/ 20.90 <strike style="color:red">S/ 30.00</strike></h3>
+                                <div class="BotonComprar">
+                                    <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
+                                </div>
+                                <div class="BotonPersonalizar">
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="producto-v2">
+                            <div class="w-50">
+                                <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146466039.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg"
+                                    alt="Tradi Roll">
+                            </div>
+                            <div class="w-50">
+                                <h2>Combo Tradi Roll</h2>
+                                <p>1 Tradi Roll, 4 Alitas o Nuggets, 1 Papa Regular y 1 Gaseosa 500ml. Salsas: 1 Aji, 1
+                                    Mayonesa y 1 Ketchup.</p>
+                                <h3>S/ 25.90 <strike style="color:red">S/ 36.00</strike></h3>
+                                <div class="BotonComprar">
+                                    <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
+                                </div>
+                                <div class="BotonPersonalizar">
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="producto-v2">
+                            <div class="w-50">
+                                <img
+                                    src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146468250.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg">
+                            </div>
+                            <div class="w-50">
+                                <h2>Dúo Chicken Roll</h2>
+                                <p>2 Chicken Roll y 1 Papa Cajún Familiar.Salsas: 2 Ajíes, 2 Mayonesa y 2 Ketchup.</p>
+                                <h3>S/ 26.90 <strike style="color:red">S/ 32.00</strike></h3>
+                                <div class="BotonComprar">
+                                    <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
+                                </div>
+                                <div class="BotonPersonalizar">
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Promociones</h1>
+                    <div class="container-producto-v2">
+                        <div class="producto-v2">
+                            <div class="w-50">
+                                <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467670.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg"
+                                    alt="Tradi Roll">
+                            </div>
+                            <div class="w-50">
+                                <h2>Tradi Roll y Sandwich</h2>
+                                <p>1 Tradi Roll, 1 Sandwich Mayo, 2 Papas Cajún Regular y 2 Gaseosa 500ml. Salsas: 2
+                                    Ajíes, 2 Mayonesa y 2 Ketchup.</p>
+                                <h3>S/ 39.90 <strike style="color:red">S/ 61.00</strike></h3>
+                                <div class="BotonComprar">
+                                    <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
+                                </div>
+                                <div class="BotonPersonalizar">
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="producto-v2">
+                            <div class="w-50">
+                                <img src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467666.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg"
+                                    alt="Tradi Roll">
+                            </div>
+                            <div class="w-50">
+                                <h2>Promo Festi 8 Piezas</h2>
+                                <p>8 Piezas o 10 Tenders y 1 Papa Cajún Familiar. Salsas: 4 Aji, 4 Mayonesa y 4 Ketchup.
+                                </p>
+                                <h3>S/ 49.90 <strike style="color:red">S/ 99.90</strike></h3>
+                                <div class="BotonComprar">
+                                    <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
+                                </div>
+                                <div class="BotonPersonalizar">
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="producto-v2">
+                            <div class="w-50">
+                                <img
+                                    src="https://www.popeyes.com.pe/media/catalog/product/2/1/2146467667.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg">
+                            </div>
+                            <div class="w-50">
+                                <h2>Promo Festi 10 Piezas Full</h2>
+                                <p>10 Piezas, 1 Papa Cajún Familiar y 1 Gaseosa de 1.5 L. Salsas: 5 Ajíes, 5 Mayonesa y
+                                    5 Ketchup.</p>
+                                <h3>S/ 66.90 <strike style="color:red">S/ 132.00</strike></h3>
+                                <div class="BotonComprar">
+                                    <a href="" class="AgregarPedido"><b>Agregar al pedido</b></a>
+                                </div>
+                                <div class="BotonPersonalizar">
+                                    <a href="#PersonalizarPedido" class="BotomPersonalizar"><b>Personalizar</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr style="margin-top: 50px;">
+                <section>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://i.ibb.co/VN9Pfs0/Fastfuel.png" alt="No se encontro"
+                                    class="ConectateConNosotros">
+                                <p><b>Conéctate con Nosotros</b></p>
+                                <div>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram" style="margin-left:15px"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <p><b>Nuestros productos</b></p>
+                                    <div>
+                                      <ul>
+                                        <li><a href="Personales.html">Personales</a></li>
+                                      </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Duos.html">Duos</a></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Familiares.html">Familiares</a></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Banquetes.html">Banquetes</a></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <ul>
+                                          <li><a href="Sandwich.html">Sandwich y Rolls</a></li>
+                                        </ul>
+                                    </div>
+                            </td>
+                            <td>
+                                <p><b>Ayuda</b></p>
+                                <ul class="li"><a href="">Comprobante Electrónico</a></ul>
+                                <ul class="li"><a href="">Politica de datos personales</a></ul>
+                                <ul class="li"><a href="">Términos y condiciones</a></ul>
+                                <ul class="li"><a href="">Derecho de ARCO</a></ul>
+                            </td>
+                            <td>
+                                <div>
+                                    <ul>
+                                      <li><a href="Reclamaciones.html">Libro de Reclamaciones</a></li>
+                                    </ul>
+                                </div>
+                                <img src="https://www.popeyes.com.pe/static/version1725277027/frontend/Ngr/popeyes/es_PE/images/libro-de-reclamaciones.jpg"
+                                    alt="">
+                                <p><b>Metodos de pago</b></p>
+                                <div class="MetodoPago">
+                                    <img src="https://www.popeyes.com.pe/static/version1725277027/frontend/Ngr/popeyes/es_PE/images/payment/visa.jpg"
+                                        alt="">
+                                    <img src="https://www.popeyes.com.pe/static/version1725277027/frontend/Ngr/popeyes/es_PE/images/payment/master.jpg"
+                                        alt="">
+                                    <img src="https://www.popeyes.com.pe/static/version1725277027/frontend/Ngr/popeyes/es_PE/images/payment/amex.jpg"
+                                        alt="">
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <div class="DerechosPropiedad">
+                    <p>© 2024 FASTFUEL.CHICKEN. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carroCompras" id="carroCompras">
+        <div class="detalleCarrito">
+            <div class="cabeceraCarrito">
+                <p><b>Carrito de compras</b></p>
+                <a id="CerrarCarritoCompras" class="cerrar"><b>x</b></a>
+            </div>
+            <div class="elementos" id="elementos">
+                <p>Tu producto ha sido eliminado del carrito y es necesario que realicemos tu compra nuevamente.</p>
+            </div>
+    </div>
+
+        <div class="PersonalizarPedido" id="PersonalizarPedido">
+            <div class="EspacioPersonalizacion">
+                <div class="EstilosdeX"><a href="index.html" class="cerrar"><b>x</b></a></div>
+                <div class="descripcionDePersonalizacion">
+                    <p><b>Personaliza tu pedido , puedes escoger las distinas salsas del listado , considerar que solo
+                            se pueden escoger hasta 10 items por cada uno</b></p>
+                </div>
+                <section>
+                    <div class="container-producto-v2">
+                        <div class="producto-v4">
+                            <div style="width: 100%; ">
+                                <table class="PreferenciaPedido">
+                                    <tr>
+                                        <td class="ItemPersonalizado">6 PICANTITO</td>
+                                        <td class="cantidad"> 
+                                            <td class="cantidad">
+                                                <input type="radio" id="" name="" value=""> 
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">6 TRADICIONAL</td>
+                                        <td class="cantidad"> 
+                                            <td class="cantidad">
+                                                <input type="radio" id="" name="" value=""> 
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">TENDER X8 UNIDADES</td>
+                                        <td class="cantidad"> 
+                                            <td class="cantidad">
+                                                <input type="radio" id="" name="" value=""> 
+                                            </td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>   
+                        </div>
+                        <div class="producto-v4">
+                            <div style="width: 100%; ">
+                                <table class="PreferenciaPedido">
+                                    
+                                    <tr>
+                                        <td class="ItemPersonalizado">Mayonesa</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">Keptchup</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">Bebidas</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="producto-v4">
+                            <div style="width: 100%; ">
+                                <table class="PreferenciaPedido">
+                                    
+                                    <tr>
+                                        <td class="ItemPersonalizado">CHICHARRON POP +$5.90</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">6ALITAS PICANTES +$12.90 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ItemPersonalizado">10 NUGGET +$12.90</td>
+                                        <td class="cantidad">
+                                            <div class="circulo">-</div>
+                                        </td>
+                                        <td class="cantidad"> 0 </td>
+                                        <td class="cantidad">
+                                            <div class="circulo">+</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boton-guardar" id="boton-guardar">
+                        <a href="#" class="guardarPersonalizacion">Guardar</a>
+                    </div> 
+                </section>
+            </div>
+        </div>
+
+</body>
+
+</html>

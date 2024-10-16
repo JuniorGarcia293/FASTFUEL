@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #d2232a; /* Color rojo similar al de Popeyes */
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px; 
+}
+
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;  
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.BotonComprar{
+    width: 100%;
+    background-color: rgb(69, 189, 236);
+    border-radius: 20px;
+    justify-items: center;
+    text-align: center;
+    height: 6%;
+    margin: 0 auto;
+}
+
+a b {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.AgregarPedido:hover{
+    text-decoration: none !important; 
+    border-bottom: none !important; 
+} 
+ 
+.BotonComprar p{
+ color: white;
+ font-family: 'Chicken Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ font-size: 18px;
+}
+
+.AgregarPedido:hover{
+    text-decoration: none !important; 
+    border-bottom: none !important; 
+} 
